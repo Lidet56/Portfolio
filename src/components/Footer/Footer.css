@@ -50,8 +50,36 @@
 .footer .disclaimer {
   font-size: 13px;
   line-height: 1.7;
-  font-weight: 700;
-  color: #555;
+  font-weight: 400;
+  color: #848484;
+  margin-bottom: 0;
+}
+.footer .footer-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer .footer-menu li {
+  margin-bottom: 8px;
+}
+
+.footer .footer-menu a {
+  color: #848484;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.footer .footer-menu a:hover {
+  color: #f0c14b;
+}
+
+.footer .disclaimer {
+  font-size: 13px;
+  line-height: 1.7;
+  font-weight: 400;
+  color: #848484;
   margin-bottom: 0;
 }
 
