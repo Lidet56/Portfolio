@@ -1,0 +1,64 @@
+
+/************************** 
+* 12. reviews styles 
+***************************/
+.review-area .testimonial-carousel {
+  background-color: transparent;
+}
+.review-area .testimonial-carousel .owl-nav {
+  margin: 0;
+}
+.review-area .testimonial-carousel .owl-nav [class*="owl-"] {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  position: absolute;
+  top: 50%;
+  left: 70px;
+  margin-top: 20px;
+}
+.review-area .testimonial-carousel .owl-nav [class*="owl-next"] {
+  right: 70px;
+  left: auto;
+}
+.review-area .testimonial-carousel .single-testimonial {
+  text-align: center;
+  padding-top: 75px;
+}
+.review-area .testimonial-carousel .single-testimonial .inner {
+  background: #fff;
+  padding-bottom: 55px;
+}
+.review-area .testimonial-carousel .single-testimonial .icon-box {
+  position: relative;
+  top: -75px;
+  margin-bottom: -75px;
+}
+.review-area .testimonial-carousel .single-testimonial .icon-box img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+.review-area .testimonial-carousel .single-testimonial h3 {
+  color: #383838;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+  margin-top: 25px;
+}
+.review-area .testimonial-carousel .single-testimonial p {
+  font-size: 17px;
+  line-height: 28px;
+  color: #848484;
+  margin: 0;
+  margin-top: 40px;
+}
+.review-area .testimonial-carousel .single-testimonial span {
+  display: block;
+  color: #848484;
+  font-size: 14px;
+  font-style: italic;
+  margin-top: 5px;
+}

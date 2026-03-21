@@ -1,0 +1,36 @@
+/************************** 
+* 8. call to action styles 
+***************************/
+.call-to-action {
+  padding-top: 80px;
+  padding-bottom: 85px;
+  position: relative;
+  background: #0d395a url(../img/cta-bg.jpg) center center no-repeat fixed;
+  background-size: cover;
+}
+.call-to-action:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(13, 57, 90, 0.9);
+}
+.call-to-action .container {
+  position: relative;
+}
+.call-to-action .container p {
+  color: #fff;
+  font-size: 17px;
+  font-style: italic;
+  margin: 0;
+}
+.call-to-action .container h2 {
+  color: #fff;
+  margin: 0;
+  font-weight: bold;
+  font-size: 44px;
+  margin-top: 15px;
+  margin-bottom: 40px;
+}

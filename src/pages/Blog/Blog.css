@@ -1,0 +1,235 @@
+/* .singleBlogGrid:hover .imgBox:before {
+  opacity: 1;
+}
+
+.singleBlogGrid .imgBox {
+  position: relative;
+  cursor: pointer;
+}
+
+.singleBlogGrid .imgBox:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 0.4s ease;
+}
+
+.singleBlogGrid .imgBox .dateBox {
+  width: 55px;
+  height: 55px;
+  background: #EFB311;
+  color: #fff;
+  font-family: "Raleway";
+  font-size: 15px;
+  line-height: 24px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  text-align: center;
+  z-index: 9;
+  line-height: 17px;
+  font-weight: 600;
+  padding-top: 10px;
+}
+
+.singleBlogGrid .textBox {
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.07);
+}
+
+.singleBlogGrid .textBox h3,
+.singleBlogGrid .textBox p {
+  margin: 0;
+}
+
+.singleBlogGrid .textBox h3 {
+  color: #222222;
+  font-weight: 600;
+  font-size: 20px;
+  transition: all 0.4s ease;
+}
+
+.singleBlogGrid .textBox h3:hover {
+  color: #EFB311;
+}
+
+.singleBlogGrid .textBox .meta {
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.singleBlogGrid .textBox .meta a {
+  display: inline-block;
+  color: #848484;
+  font-size: 14px;
+  transition: all 0.4s ease;
+}
+
+.singleBlogGrid .textBox .meta a:hover {
+  color: #EFB311;
+}
+
+.singleBlogGrid .textBox .meta span.sep {
+  display: inline-block;
+  color: #848484;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.singleBlogGrid .textBox p {
+  margin-bottom: 10px;
+}
+
+.singleBlogGrid .textBox a.readMore {
+  color: #848484;
+  transition: all 0.4s ease;
+  font-weight: 600;
+}
+
+.singleBlogGrid .textBox a.readMore i {
+  font-size: 14px;
+  margin-left: 7px;
+}
+
+.singleBlogGrid .textBox a.readMore:hover {
+  color: #EFB311;
+}
+
+@media (max-width: 991px) {
+  .latestNewsArea {
+    padding-bottom: 70px;
+  }
+  .latestNewsArea .singleBlogGrid {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 667px) {
+  .singleBlogGrid .imgBox > img {
+    width: 100%;
+  }
+} */ 
+
+/* .single-blog-grid .text-box {
+  padding: 30px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.07);
+}
+
+.single-blog-grid h3 {
+  font-size: 20px;
+  font-weight: 600;
+} */
+
+
+.single-blog-grid:hover .img-box:before {
+  opacity: 1;
+}
+
+.single-blog-grid .img-box {
+  position: relative;
+  cursor: pointer;
+}
+
+.single-blog-grid .img-box:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 0.4s ease;
+}
+
+.single-blog-grid .img-box .date-box {
+  width: 55px;
+  height: 55px;
+  background: #efb311;
+  color: #fff;
+  font-family: "Raleway";
+  font-size: 15px;
+  line-height: 24px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  text-align: center;
+  z-index: 9;
+  line-height: 17px;
+  font-weight: 600;
+  padding-top: 10px;
+}
+
+.single-blog-grid .text-box {
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.07);
+}
+
+.single-blog-grid .text-box h3,
+.single-blog-grid .text-box p {
+  margin: 0;
+}
+
+.single-blog-grid .text-box h3 {
+  color: #222222;
+  font-weight: 600;
+  font-size: 20px;
+  transition: all 0.4s ease;
+}
+
+.single-blog-grid .text-box h3:hover {
+  color: #efb311;
+}
+
+.single-blog-grid .text-box .meta {
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.single-blog-grid .text-box .meta a {
+  display: inline-block;
+  color: #848484;
+  font-size: 14px;
+  transition: all 0.4s ease;
+}
+
+.single-blog-grid .text-box .meta a:hover {
+  color: #efb311;
+}
+
+.single-blog-grid .text-box .meta span.sep {
+  display: inline-block;
+  color: #848484;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.single-blog-grid .text-box p {
+  margin-bottom: 10px;
+}
+
+.single-blog-grid .text-box a.read-more {
+  color: #848484;
+  transition: all 0.4s ease;
+  font-weight: 600;
+}
+
+.single-blog-grid .text-box a.read-more i {
+  font-size: 14px;
+  margin-left: 7px;
+}
+
+.single-blog-grid .text-box a.read-more:hover {
+  color: #efb311;
+}

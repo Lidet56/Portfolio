@@ -1,0 +1,203 @@
+/* .servicesArea .singleService {
+  background: #fff;
+  text-align: center;
+  padding: 0 30px;
+  padding-top: 55px;
+  padding-bottom: 50px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.07);
+}
+
+.servicesArea .singleService:hover {
+  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.07);
+}
+
+.servicesArea .singleService:hover .iconBox {
+  background: #EFB311;
+}
+
+.servicesArea .singleService:hover .iconBox i {
+  color: #fff;
+}
+
+.servicesArea .singleService .iconBox {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.4s ease;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.07);
+}
+
+.servicesArea .singleService .iconBox i {
+  color: #EFB311;
+  font-size: 40px;
+  line-height: 100px;
+}
+
+.servicesArea .singleService h3,
+.servicesArea .singleService p {
+  margin: 0;
+}
+
+.servicesArea .singleService h3 {
+  color: #222222;
+  font-size: 18px;
+  line-height: 1em;
+  font-weight: 600;
+  margin-top: 30px;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.servicesArea .singleService h3:hover {
+  color: #EFB311;
+}
+
+.servicesArea .singleService p {
+  color: #777777;
+  margin-top: 20px;
+}
+
+@media (max-width: 991px) {
+  .servicesArea {
+    padding-bottom: 70px;
+  }
+  .servicesArea .singleService {
+    margin-bottom: 30px;
+  }
+} */
+
+
+/* .services-area .single-service {
+  background: #fff;
+  text-align: center;
+  padding: 55px 30px 50px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.07);
+}
+
+.services-area .single-service:hover .icon-box {
+  background: #EFB311;
+}
+
+.services-area .icon-box {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+} */
+/* 
+.services-area .single-service {
+  background: #fff;
+  text-align: center;
+  padding: 0 30px;
+  padding-top: 55px;
+  padding-bottom: 50px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.07);
+}
+
+.services-area .single-service:hover {
+  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.07);
+}
+
+.services-area .single-service:hover .icon-box {
+  background: #efb311;
+}
+
+.services-area .single-service:hover .icon-box i {
+  color: #fff;
+}
+
+.services-area .single-service .icon-box {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.4s ease;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.07);
+}
+
+.services-area .single-service .icon-box i {
+  color: #efb311;
+  font-size: 40px;
+  line-height: 100px;
+}
+
+.services-area .single-service h3,
+.services-area .single-service p {
+  margin: 0;
+}
+
+.services-area .single-service h3 {
+  color: #222222;
+  font-size: 18px;
+  line-height: 1em;
+  font-weight: 600;
+  margin-top: 30px;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.services-area .single-service h3:hover {
+  color: #efb311;
+} */
+
+/* .services-area .single-service p {
+  color: #777777;
+  margin-top: 20px;
+} */
+
+/************************** 
+* 6. services styles 
+***************************/
+.services-area .single-service {
+  background: #fff;
+  text-align: center;
+  padding: 0 30px;
+  padding-top: 55px;
+  padding-bottom: 50px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.07);
+}
+.services-area .single-service:hover {
+  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.07);
+}
+.services-area .single-service:hover .icon-box {
+  background: #efb311;
+}
+.services-area .single-service:hover .icon-box i {
+  color: #fff;
+}
+.services-area .single-service .icon-box {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.4s ease;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.07);
+}
+.services-area .single-service .icon-box i {
+  color: #efb311;
+  font-size: 40px;
+  line-height: 100px;
+}
+.services-area .single-service h3,
+.services-area .single-service p {
+  margin: 0;
+}
+.services-area .single-service h3 {
+  color: #222222;
+  font-size: 18px;
+  line-height: 1em;
+  font-weight: 600;
+  margin-top: 30px;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+.services-area .single-service h3:hover {
+  color: #efb311;
+}
+.services-area .single-service p {
+  color: #777777;
+  margin-top: 20px;
+}

@@ -1,0 +1,51 @@
+/* desktop: keep brand + menu in one row */
+.header .header-navigation.navbar > .container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.header .navbar-header {
+  flex: 0 0 auto;
+  float: none;
+}
+
+.header .navbar-brand {
+  display: inline-flex;
+  align-items: center;
+  float: none !important;
+  margin: 0;
+  padding: 0;
+}
+
+.header .navbar-collapse {
+  flex: 1 1 auto;
+  float: none !important;
+  width: auto !important;
+  text-align: right;
+}
+
+.header .header-navigation.navbar .nav.navigation-box {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* keep desktop collapse visible */
+@media (min-width: 1025px) {
+  .header .navbar-collapse.collapse {
+    display: block !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+}
+
+/* mobile keeps stacked/collapsible behavior */
+@media (max-width: 1024px) {
+  .header .header-navigation.navbar > .container-fluid {
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

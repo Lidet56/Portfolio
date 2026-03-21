@@ -1,0 +1,67 @@
+
+/************************** 
+* 9. resume styles 
+***************************/
+.resume-area .single-resume h3,
+.resume-area .single-resume p {
+  margin: 0;
+}
+.resume-area .single-resume:last-child .education-info {
+  padding-bottom: 0;
+}
+.resume-area .single-resume .education-name {
+  background: #f5f5f5;
+  padding-left: 40px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+.resume-area .single-resume .education-name h3 {
+  color: #222222;
+  font-size: 20px;
+  font-weight: 500;
+}
+.resume-area .single-resume .education-name p {
+  color: #efb311;
+  font-family: "Montserrat";
+  margin-top: 10px;
+}
+.resume-area .single-resume .education-info {
+  position: relative;
+  border-left: 1px solid #f5f5f5;
+  padding-left: 40px;
+  padding-bottom: 40px;
+}
+.resume-area .single-resume .education-info:before {
+  content: "";
+  width: 11px;
+  height: 11px;
+  background: #efb311;
+  border-radius: 50%;
+  position: absolute;
+  top: 27%;
+  left: -2px;
+  transform: translateX(-27%);
+}
+.resume-area .single-resume .education-info .inner {
+  background: #fff;
+  padding-left: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.07);
+}
+.resume-area .single-resume .education-info .inner h3 {
+  color: #222222;
+  font-size: 20px;
+  font-weight: 500;
+}
+.resume-area .single-resume .education-info .inner p {
+  color: #777777;
+}
+.resume-area .single-resume .education-info .inner .line {
+  display: block;
+  width: 50px;
+  height: 1px;
+  background: #efb311;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}

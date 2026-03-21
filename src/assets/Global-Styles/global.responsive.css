@@ -1,0 +1,65 @@
+@media (max-width: 991px) {
+  .services-area {
+    padding-bottom: 70px;
+  }
+
+  .services-area .single-service {
+    margin-bottom: 30px;
+  }
+
+  .resume-area .single-resume .education-info {
+    padding-left: 0;
+    margin-top: 30px;
+    border-left: 0;
+  }
+
+  .resume-area .single-resume .education-info:before {
+    display: none;
+  }
+
+  .latest-news-area {
+    padding-bottom: 70px;
+  }
+
+  .latest-news-area .single-blog-grid {
+    margin-bottom: 30px;
+  }
+
+  .sidebar.sidebar-right {
+    padding-left: 0;
+    margin-top: 50px;
+  }
+
+  .sidebar.sidebar-left {
+    padding-right: 0;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 736px) {
+  .portfolio-area [class*="col-md"] {
+    width: 50%;
+    float: left;
+  }
+}
+
+@media (max-width: 667px) {
+  .portfolio-area .single-portfolio > img {
+    width: 100%;
+  }
+
+  .single-blog-grid .img-box > img {
+    width: 100%;
+  }
+
+  .portfolio-area .portfolio-filter ul li + li span {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio-area [class*="col-md"] {
+    width: 100%;
+    float: left;
+  }
+}

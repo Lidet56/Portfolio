@@ -1,0 +1,80 @@
+/************************** 
+* 5. about styles 
+***************************/
+.about-area .about-content {
+  margin-top: 40px;
+  padding-top: 65px;
+  padding-left: 60px;
+  padding-bottom: 110px;
+  background: transparent url(../img/about-content-bg.png) 0px 0px no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  z-index: 9;
+}
+.about-area .about-content h3,
+.about-area .about-content p {
+  margin: 0;
+}
+.about-area .about-content h3 {
+  font-size: 28px;
+  color: #222222;
+  font-family: "Raleway";
+  font-size: 28px;
+  line-height: 1em;
+}
+.about-area .about-content p {
+  color: #848484;
+  margin-top: 30px;
+}
+.about-area .about-content ul.contact-info,
+.about-area .about-content ul.contact-info li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.about-area .about-content ul.contact-info {
+  margin-top: 17px;
+}
+.about-area .about-content ul.contact-info li {
+  font-size: 14px;
+  line-height: 22px;
+  color: #848484;
+  font-family: "Montserrat";
+}
+.about-area .about-content ul.contact-info li + li {
+  margin-top: 10px;
+}
+.about-area .about-content ul.contact-info li span {
+  color: #222222;
+  font-weight: 600;
+}
+.about-area .about-content .button-box {
+  margin-top: 35px;
+}
+.about-area .about-content .button-box a.thm-btn:hover {
+  background: #222;
+  color: #efb311;
+  border-color: #222;
+}
+.about-area .about-content .button-box a.thm-btn + a.thm-btn {
+  margin-left: 20px;
+}
+.about-area .about-content .button-box a.thm-btn.borderd {
+  color: #222222;
+  font-size: 14px;
+  border-color: #e5e5e5;
+}
+.about-area .about-content .button-box a.thm-btn.borderd:hover {
+  background: #e5e5e5;
+  color: #efb311;
+}
+.about-area p.about-text {
+  margin: 0;
+  color: #848484;
+  margin-top: 75px;
+}
+.about-area img {
+  width: 100%;
+  max-width: 1040px;
+  height: auto;
+}

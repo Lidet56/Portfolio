@@ -1,0 +1,79 @@
+.fun-fact-area {
+  padding: 75px 0;
+}
+
+.fun-fact-area .single-fun-fact {
+  position: relative;
+  padding-left: 25px;
+}
+
+.fun-fact-area .single-fun-fact .icon-box {
+  background: #efb311;
+  color: #fff;
+  font-size: 27px;
+  text-align: center;
+  line-height: 50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: -25px;
+  margin-top: -25px;
+}
+
+.fun-fact-area .single-fun-fact .inner {
+  position: relative;
+  background: #fff;
+  padding: 35px 0;
+  padding-left: 55px;
+}
+
+.fun-fact-area .single-fun-fact .inner h3,
+.fun-fact-area .single-fun-fact .inner p {
+  margin: 0;
+}
+
+.fun-fact-area .single-fun-fact .inner h3 {
+  font-size: 50px;
+  font-family: "Montserrat";
+  color: #1d2025;
+  font-weight: bold;
+}
+
+.fun-fact-area .single-fun-fact .inner p {
+  color: #383838;
+  font-family: "Montserrat";
+  font-weight: 300;
+  margin-top: 0px;
+}
+
+@media (max-width: 1024px) {
+  .fun-fact-area .single-fun-fact {
+    padding-left: 0;
+  }
+
+  .fun-fact-area .single-fun-fact .inner {
+    padding-left: 0;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .fun-fact-area .single-fun-fact .inner .icon-box {
+    position: static;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 991px) {
+  .fun-fact-area {
+    padding-bottom: 45px;
+  }
+
+  .fun-fact-area .single-fun-fact {
+    margin-bottom: 30px;
+  }
+}

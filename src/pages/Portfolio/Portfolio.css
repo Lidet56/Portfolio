@@ -1,0 +1,275 @@
+/* Portfolio filter */
+.portfolio-area .portfolio-filter {
+  margin-top: 70px;
+}
+
+.portfolio-area .top-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 24px;
+}
+
+/* cancel bootstrap float helpers in this section */
+.portfolio-area .top-box .pull-left,
+.portfolio-area .top-box .pull-right {
+  float: none !important;
+}
+
+
+
+.portfolio-area .portfolio-filter ul li + li span {
+  margin-left: 15px;
+}
+
+.portfolio-area .portfolio-filter ul li.active span,
+.portfolio-area .portfolio-filter ul li:hover span {
+  color: #efb311;
+}
+
+.portfolio-area .portfolio-filter ul li span {
+  display: block;
+  color: #222222;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+/* IMPORTANT: don't use old negative margin trick with modern animated layout */
+.portfolio-area .portfolio-wrapper {
+  margin-top: 0;
+}
+
+/* Use CSS Grid for stable layout */
+.portfolio-area .masonary-layout {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+
+
+   /* reset any bootstrap row negative margins that might leak in */
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+
+  /* box sizing so widths are consistent */
+  box-sizing: border-box;
+
+  /* anchor items to left, not centered */
+  justify-items: stretch;
+}
+
+/* Neutralize bootstrap column behavior in this section */
+.portfolio-area .masonary-item {
+  width: 100% !important;
+  float: none !important;
+  padding: 0 !important;
+}
+
+/* Card */
+.portfolio-area .single-portfolio {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-area .single-portfolio > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.portfolio-area .single-portfolio:hover .overlay {
+  opacity: 1;
+}
+
+.portfolio-area .single-portfolio .overlay {
+  position: absolute;
+  inset: 0;
+  padding-bottom: 25px;
+  padding-left: 30px;
+  opacity: 0;
+  transition: all 0.4s ease;
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.portfolio-area .single-portfolio .overlay .content {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio-area .single-portfolio .overlay .content .box {
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+.portfolio-area .single-portfolio .overlay .content .box h3,
+.portfolio-area .single-portfolio .overlay .content .box p {
+  margin: 0;
+  color: #fff;
+}
+
+.portfolio-area .single-portfolio .overlay .content .box h3 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+/* Use button version (React) */
+.portfolio-area .single-portfolio .overlay .content .box .img-popup {
+  display: block;
+  margin: 0 auto 25px;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  border: none;
+  background: #fff;
+  text-align: center;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.portfolio-area .single-portfolio .overlay .content .box .img-popup i {
+  color: #efb311;
+  font-size: 22px;
+  line-height: 65px;
+  transition: color 0.3s ease;
+}
+
+.portfolio-area .single-portfolio .overlay .content .box .img-popup:hover {
+  background: #efb311;
+}
+
+.portfolio-area .single-portfolio .overlay .content .box .img-popup:hover i {
+  color: #fff;
+}
+
+/* left side should stay left */
+.portfolio-area .top-box .sec-title {
+  margin-right: auto;
+  max-width: 620px;
+}
+
+/* right side filter aligns right */
+.portfolio-area .top-box .portfolio-filter {
+  margin-top: 0;
+  margin-left: auto;
+}
+
+.portfolio-area .portfolio-filter .post-filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+.portfolio-area .portfolio-filter .post-filter li {
+  list-style: none;
+}
+
+/* neutralize old spacing rule that adds left margin between spans */
+.portfolio-area .portfolio-filter ul li + li span {
+  margin-left: 0;
+}
+
+.single-portfolio {
+  position: relative;
+  overflow: hidden;
+}
+
+.single-portfolio img {
+  width: 100%;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.single-portfolio:hover img {
+  transform: scale(1.1);
+}
+
+.single-portfolio .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(7, 34, 53, 0.85);
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.4s ease;
+}
+
+.single-portfolio:hover .overlay {
+  opacity: 1;
+}
+
+.portfolio-links {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+  justify-content: center;
+}
+
+.portfolio-btn {
+  padding: 8px 16px;
+  background: #efb311;
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.portfolio-btn:hover {
+  background: #fff;
+}
+
+.portfolio-btn.demo {
+  background: transparent;
+  border: 2px solid #efb311;
+  color: #fff;
+}
+
+.portfolio-btn.demo:hover {
+  background: #efb311;
+  color: #000;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .portfolio-area .top-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .portfolio-area .top-box .portfolio-filter {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .portfolio-area .portfolio-filter .post-filter {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 991px) {
+  .portfolio-area .masonary-layout {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 667px) {
+  .portfolio-area .portfolio-filter ul li + li span {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .portfolio-area .masonary-layout {
+    grid-template-columns: 1fr;
+  }
+}
