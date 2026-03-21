@@ -27,10 +27,10 @@
 /************************** 
 * 1. imported styles 
 ***************************/
+
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i);
 @import url(https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i);
-@import url(bootstrap-select/dist/css/bootstrap-select.min.css);
-@import url(../otherstyles/font-awesome/css/font-awesome.min.css);
+
 @import url(../otherstyles/bootstrap-select/dist/css/bootstrap-select.min.css);
 @import url(../otherstyles/fn-icon/style.css);
 @import url(../otherstyles/owl.carousel-2/assets/owl.carousel.css);
