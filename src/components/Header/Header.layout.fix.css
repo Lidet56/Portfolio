@@ -7,9 +7,25 @@
   padding-right: 70px;
 }
 
+/* dark visible header on all pages */
+.header .header-navigation {
+  background: rgba(10, 24, 45, 0.92) !important;
+  min-height: 58px !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.header.header-fixed .header-navigation,
+.header.header-fixed.stricky-fixed .header-navigation {
+  background: rgba(10, 24, 45, 0.92) !important;
+}
+
 .header .navbar-header {
   flex: 0 0 auto;
   float: none;
+  display: flex;
+  align-items: center;
+  min-height: 58px !important;
 }
 
 .header .navbar-brand {
@@ -18,6 +34,12 @@
   float: none !important;
   margin: 0;
   padding: 0;
+}
+
+.header .navbar-brand img {
+  max-height: 42px !important;
+  width: auto;
+  display: block;
 }
 
 .header .navbar-collapse {
@@ -30,10 +52,31 @@
 .header .header-navigation.navbar .nav.navigation-box {
   display: inline-flex;
   align-items: center;
+  margin: 0;
+}
+
+/* nav link color + shorter header */
+.header .header-navigation .navbar-nav > li > a,
+.header .header-navigation .navigation-box > li > a,
+.header .header-navigation .mainmenu li a {
+  color: #fff !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  line-height: 58px !important;
+  height: 58px !important;
+  display: inline-block;
+}
+
+/* hover color */
+.header .header-navigation .navbar-nav > li > a:hover,
+.header .header-navigation .navigation-box > li > a:hover,
+.header .header-navigation .mainmenu li a:hover {
+  color: #efb311 !important;
 }
 
 /* keep desktop collapse visible */
 @media (min-width: 1025px) {
+  .header .navbar-collapse,
   .header .navbar-collapse.collapse {
     display: block !important;
     height: auto !important;
@@ -41,11 +84,16 @@
   }
 }
 
-/* mobile keeps stacked/collapsible behavior */
+/* mobile keeps stacked behavior */
 @media (max-width: 1024px) {
   .header .header-navigation.navbar > .container-fluid {
     display: block;
     padding-left: 20px;
     padding-right: 20px;
   }
+}
+
+/* push page content below fixed header */
+body {
+  padding-top: 58px !important;
 }
