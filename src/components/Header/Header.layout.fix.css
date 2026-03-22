@@ -399,3 +399,25 @@ body {
     padding-top: 70px !important;
   }
 }
+@media (max-width: 1024px) {
+  .header .navbar-collapse {
+    background: #ffffff !important;
+  }
+
+  .header .navbar-collapse .navigation-box > li > a,
+  .header .navbar-collapse .mainmenu > li > a,
+  .header .navbar-collapse .nav > li > a {
+    color: #222222 !important;
+    background: transparent !important;
+    display: block !important;
+  }
+
+  .header .navbar-collapse .navigation-box > li > a:hover,
+  .header .navbar-collapse .mainmenu > li > a:hover,
+  .header .navbar-collapse .nav > li > a:hover,
+  .header .navbar-collapse .navigation-box > li.active > a,
+  .header .navbar-collapse .mainmenu > li.active > a {
+    color: #efb311 !important;
+    background: #f8f8f8 !important;
+  }
+}
