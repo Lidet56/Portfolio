@@ -4,7 +4,7 @@ import { loadSlim } from "tsparticles-slim";
 import { ReactTyped } from "react-typed";
 import { Link } from "react-router-dom";
 import "./Banner.css";
-import BannerImage from "../../assets/img/banner-1.jpg"; 
+import BannerImage from "../../assets/img/banner-1.jpg";
 
 const Banner = () => {
   const particlesInit = useCallback(async (engine) => {
@@ -75,9 +75,10 @@ const Banner = () => {
         <div className="row">
           <div className="col-md-6">
             <div className="banner-img-box">
-              <img src={BannerImage} alt="Orin Friesen" />
+              <img src={BannerImage} alt="Lidet" />
             </div>
           </div>
+
           <div className="col-md-6">
             <div className="banner-content">
               <div className="title">
@@ -96,26 +97,23 @@ const Banner = () => {
                   />
                 </div>
               </div>
+
               <p>
-                {/* I am a Full Stack Developer. <br /> */}
-                I have a passion for creating
-                dynamic and responsive web applications that provide seamless
-                user experiences. With expertise in both front-end and back-end
-                technologies, I am dedicated to delivering high-quality
-                solutions that meet client needs and exceed expectations.
+                I have a passion for creating dynamic and responsive web
+                applications that provide seamless user experiences. With
+                expertise in both front-end and back-end technologies, I am
+                dedicated to delivering high-quality solutions that meet client
+                needs and exceed expectations.
               </p>
+
               <div className="button-box">
-                <Link to="portfolio" smooth duration={700} className="thm-btn">
-                  Portfolio
-                </Link>
-                <Link
-                  to="resume"
-                  smooth
-                  duration={700}
-                  className="thm-btn borderd"
-                >
-                  Resume
-                </Link>
+                <Link to="/Portfolio" className="thm-btn">
+  Portfolio
+</Link>
+
+<Link to="/Resume" className="thm-btn borderd">
+  Resume
+</Link>
               </div>
             </div>
           </div>
