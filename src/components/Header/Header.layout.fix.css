@@ -99,6 +99,7 @@ dark visible header on all pages */
 } */
 
 /* ================= DESKTOP ================= */
+/* ================= DESKTOP ================= */
 .header .header-navigation.navbar > .container-fluid {
   display: flex;
   align-items: center;
@@ -107,9 +108,25 @@ dark visible header on all pages */
   padding-right: 70px;
 }
 
+/* dark visible header on all pages */
+.header .header-navigation {
+  background: rgba(10, 24, 45, 0.92) !important;
+  min-height: 58px !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.header.header-fixed .header-navigation,
+.header.header-fixed.stricky-fixed .header-navigation {
+  background: rgba(10, 24, 45, 0.92) !important;
+}
+
 .header .navbar-header {
   flex: 0 0 auto;
   float: none;
+  display: flex;
+  align-items: center;
+  min-height: 58px !important;
 }
 
 .header .navbar-brand {
@@ -118,6 +135,12 @@ dark visible header on all pages */
   float: none !important;
   margin: 0;
   padding: 0;
+}
+
+.header .navbar-brand img {
+  max-height: 42px !important;
+  width: auto;
+  display: block;
 }
 
 .header .navbar-collapse {
@@ -130,6 +153,7 @@ dark visible header on all pages */
 .header .header-navigation.navbar .nav.navigation-box {
   display: inline-flex;
   align-items: center;
+  margin: 0;
   padding-left: 0 !important;
 }
 
@@ -140,11 +164,25 @@ dark visible header on all pages */
 }
 
 .header .nav.navigation-box > li > a {
+  color: #fff !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
   padding-left: 0 !important;
+  line-height: 58px !important;
+  height: 58px !important;
+  display: inline-block;
+}
+
+/* hover color */
+.header .header-navigation .navbar-nav > li > a:hover,
+.header .header-navigation .navigation-box > li > a:hover,
+.header .header-navigation .mainmenu li a:hover {
+  color: #efb311 !important;
 }
 
 /* desktop: always visible */
 @media (min-width: 1025px) {
+  .header .navbar-collapse,
   .header .navbar-collapse.collapse {
     display: block !important;
     height: auto !important;
@@ -159,7 +197,6 @@ dark visible header on all pages */
 
 /* ================= MOBILE ================= */
 @media (max-width: 1024px) {
-  /* Override main.css header styles for mobile */
   .header {
     position: fixed !important;
     top: 0;
@@ -194,6 +231,7 @@ dark visible header on all pages */
     width: 100%;
     margin: 0;
     padding: 0;
+    min-height: auto !important;
   }
 
   .header .navbar-brand {
@@ -207,6 +245,7 @@ dark visible header on all pages */
   .header .navbar-brand img {
     height: 40px;
     width: auto;
+    max-height: none !important;
   }
 
   /* Hamburger button styling */
@@ -246,7 +285,7 @@ dark visible header on all pages */
     transform: rotate(-45deg) translate(4px, -5px);
   }
 
-  /* Dropdown Menu - Override main.css styles */
+  /* Dropdown menu */
   .header .navbar-collapse {
     position: absolute !important;
     top: 70px !important;
@@ -264,14 +303,15 @@ dark visible header on all pages */
     opacity: 1 !important;
     visibility: visible !important;
     border: none !important;
+    text-align: left !important;
   }
 
   .header .navbar-collapse.in {
     max-height: 500px !important;
     overflow-y: auto !important;
+    pointer-events: auto !important;
   }
 
-  /* Override main.css navigation box styles */
   .header .navigation-box {
     display: flex !important;
     flex-direction: column !important;
@@ -293,7 +333,6 @@ dark visible header on all pages */
     border-bottom: none !important;
   }
 
-  /* Override main.css link styles for mobile */
   .header .navigation-box > li > a {
     display: block !important;
     padding: 15px 25px !important;
@@ -308,6 +347,7 @@ dark visible header on all pages */
     transition: all 0.3s ease !important;
     text-align: left !important;
     letter-spacing: 0.5px !important;
+    height: auto !important;
   }
 
   .header .navigation-box > li > a:hover {
@@ -316,13 +356,11 @@ dark visible header on all pages */
     padding-left: 30px !important;
   }
 
-  /* Override any main.css hover effects */
   .header .navigation-box > li:hover > a {
     color: #efb311 !important;
     background: #fafafa !important;
   }
 
-  /* Fix for stricky-fixed class on mobile */
   .header.stricky-fixed {
     position: fixed !important;
     top: 0 !important;
@@ -333,14 +371,9 @@ dark visible header on all pages */
   .header.stricky-fixed .navbar-toggle .icon-bar {
     background: #fff !important;
   }
-
-  /* Ensure proper stacking */
-  .header .navbar-collapse.in {
-    pointer-events: auto !important;
-  }
 }
 
-/* Small mobile devices (below 480px) */
+/* Small mobile devices */
 @media (max-width: 480px) {
   .header .navbar-collapse {
     width: 260px !important;
@@ -353,5 +386,16 @@ dark visible header on all pages */
 
   .header .navigation-box > li > a:hover {
     padding-left: 25px !important;
+  }
+}
+
+/* push page content below fixed header */
+body {
+  padding-top: 58px !important;
+}
+
+@media (max-width: 1024px) {
+  body {
+    padding-top: 70px !important;
   }
 }
