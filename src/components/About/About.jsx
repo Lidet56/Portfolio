@@ -2,7 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import "./About.css";
 import about1 from "../../assets/img/about-1.png";
-import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -40,6 +39,7 @@ const About = () => {
                 the forefront of the ever-evolving web development landscape.
                 <br />
               </p>
+
               <ul className="contact-info">
                 <li>
                   <span>Name:</span> Lidet Legesse
@@ -51,10 +51,12 @@ const About = () => {
                   <span>Phone:</span> 240 883 2102
                 </li>
               </ul>
+
               <div className="button-box">
-                <Link to="/contact" className="thm-btn">
+                <a href="#contact" className="thm-btn">
                   Hire Me
-                </Link>
+                </a>
+
                 <a
                   href="/Lidet-CV.pdf"
                   target="_blank"
@@ -66,6 +68,7 @@ const About = () => {
               </div>
             </motion.div>
           </div>
+
           <div className="col-md-5 clearfix">
             <motion.div
               initial={{ opacity: 0, x: 100 }}
@@ -78,18 +81,6 @@ const About = () => {
             </motion.div>
           </div>
         </div>
-        {/* <p className="about-text">
-          I am a passionate and dedicated fullstack website developer with a
-          strong background in creating dynamic and responsive web applications.
-          With a keen eye for detail and a commitment to delivering high-quality
-          code, I strive to build seamless user experiences that not only meet
-          but exceed client expectations. My expertise spans both frontend and
-          backend development, allowing me to craft end-to-end solutions that
-          are efficient, scalable, and visually appealing. I am constantly
-          learning and adapting to new technologies, ensuring that my skills
-          remain at the forefront of the ever-evolving web development
-          landscape.  
-        </p> */}
       </div>
     </section>
   );

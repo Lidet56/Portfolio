@@ -1,5 +1,5 @@
+
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import Logo from "../../assets/img/logo.png";
 import "./Header.layout.fix.css";
 
@@ -33,9 +33,9 @@ const Header = () => {
       <nav className="navbar navbar-default header-navigation">
         <div className="container-fluid">
           <div className="navbar-header">
-            <Link className="navbar-brand" to="/" onClick={closeMenu}>
+            <a className="navbar-brand" href="#home" onClick={closeMenu}>
               <img src={Logo} alt="Lidet logo" />
-            </Link>
+            </a>
 
             <button
               type="button"
@@ -51,46 +51,44 @@ const Header = () => {
           </div>
 
           <div
-            className={`navbar-collapse ${
-              mobileMenuOpen ? "in" : ""
-            }`}
+            className={`navbar-collapse ${mobileMenuOpen ? "in" : ""}`}
             id="main-nav-bar"
           >
             <ul className="nav navbar-nav navigation-box main-navigation mainmenu one-page-scroll-menu">
               <li className="scrollToLink">
-                <Link to="/" onClick={closeMenu}>
+                <a href="#home" onClick={closeMenu}>
                   Home
-                </Link>
+                </a>
               </li>
               <li className="scrollToLink">
-                <Link to="/about" onClick={closeMenu}>
+                <a href="#about" onClick={closeMenu}>
                   About
-                </Link>
+                </a>
               </li>
               <li className="scrollToLink">
-                <Link to="/services" onClick={closeMenu}>
+                <a href="#services" onClick={closeMenu}>
                   Services
-                </Link>
+                </a>
               </li>
               <li className="scrollToLink">
-                <Link to="/portfolio" onClick={closeMenu}>
+                <a href="#portfolio" onClick={closeMenu}>
                   Portfolio
-                </Link>
+                </a>
               </li>
               <li className="scrollToLink">
-                <Link to="/resume" onClick={closeMenu}>
+                <a href="#resume" onClick={closeMenu}>
                   Resume
-                </Link>
+                </a>
               </li>
               <li className="scrollToLink">
-                <Link to="/skills" onClick={closeMenu}>
+                <a href="#skills" onClick={closeMenu}>
                   Skills
-                </Link>
+                </a>
               </li>
               <li className="scrollToLink">
-                <Link to="/contact" onClick={closeMenu}>
+                <a href="#contact" onClick={closeMenu}>
                   Contact
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
@@ -101,7 +99,6 @@ const Header = () => {
 };
 
 export default Header;
-
 
 // import { useEffect, useState } from "react";
 // import { Link } from "react-router-dom";
